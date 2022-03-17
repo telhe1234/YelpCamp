@@ -68,7 +68,7 @@ router.put('/:id', isLoggedIn, validateCampground, catchAsync(async (req, res) =
         req.flash('error', 'You do not have permission to do that!');
         return res.redirect(`/campgrounds/${id}`);
     }
-    const campg = await Campground.findByIdAndUpdate(id, { ...req.body.campground });
+    const camp = await Campground.findByIdAndUpdate(id, { ...req.body.campground });
     req.flash('success', 'Successfully updated campground!');
     res.redirect(`/campgrounds/${campground._id}`);
 }))
