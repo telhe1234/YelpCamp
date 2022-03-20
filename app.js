@@ -1,4 +1,4 @@
-if(process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config();
 }
 console.log(process.env.SECRET);
@@ -22,16 +22,16 @@ const reviewsRoutes = require('./routes/reviews');
 
 
 mongoose.connect('mongodb://localhost:27017/yelp-camp', {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true
 });
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => {
-    console.log("Database connected");
+  console.log("Database connected");
 });
 
 const app = express();
@@ -47,14 +47,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 const sessionConfig = {
-    secret: 'thisshouldbeabettersecret',
-    resave: false,
-    saveUninitialized: true,
-    cookie: {
-        httpOnly: true,
-        expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
-        maxAge: 1000 * 60 * 60 * 24 * 7
-    }
+  secret: 'thisshouldbeabettersecret',
+  resave: false,
+  saveUninitialized: true,
+  cookie: {
+    httpOnly: true,
+    expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
+    maxAge: 1000 * 60 * 60 * 24 * 7
+  }
 
 };
 app.use(session(sessionConfig));
@@ -68,17 +68,17 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 app.use((req, res, next) => {
-    console.log(req.session);
-    res.locals.currentUser = req.user;
-    res.locals.success = req.flash('success');
-    res.locals.error = req.flash('error');
-    next();
+  console.log(req.session);
+  res.locals.currentUser = req.user;
+  res.locals.success = req.flash('success');
+  res.locals.error = req.flash('error');
+  next();
 })
 
 app.get('/fakeUser', async (req, res) => {
-    const user = new User({ email: 'taha@gmail.com', username: 'taha' });
-    const newUser = await User.register(user, 'chicken');
-    res.send(newUser);
+  const user = new User({ email: 'taha@gmail.com', username: 'taha' });
+  const newUser = await User.register(user, 'chicken');
+  res.send(newUser);
 })
 
 app.use('/', userRoutes);
@@ -86,17 +86,17 @@ app.use('/campgrounds', campgroundsRoutes);
 app.use('/campgrounds/:id/reviews', reviewsRoutes);
 
 app.get('/', (req, res) => {
-    res.render('home');
+  res.render('home');
 })
 
 app.all('*', (req, res, next) => {
-    next(new ExpressError('Page Not Found', 404))
+  next(new ExpressError('Page Not Found', 404))
 })
 
 app.use((err, req, res, next) => {
-    const { statusCode = 500, message = 'Something went wrong' } = err;
-    if (!err.message) err.message = 'Oh No, Something Went Wrong';
-    res.status(statusCode).render('error', { err });
+  const { statusCode = 500, message = 'Something went wrong' } = err;
+  if (!err.message) err.message = 'Oh No, Something Went Wrong';
+  res.status(statusCode).render('error', { err });
 })
 
 // app.get('/makecampground', async (req, res) => {
@@ -106,5 +106,5 @@ app.use((err, req, res, next) => {
 // })
 
 app.listen(3000, () => {
-    console.log('Serving on port 3000');
+  console.log('Serving on port 3000');
 })
