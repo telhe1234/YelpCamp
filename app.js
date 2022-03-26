@@ -24,12 +24,12 @@ const dbUrl = process.env.DB_URL || "mongodb://localhost:27017/yelp-camp";
 // const MongoStore = require('connect-mongo');
 const MongoStore = require("connect-mongo");
 
-mongoose.connect(dbUrl);
-// useNewUrlParser: true,
-// useCreateIndex: true,
-// useFindAndModify: false,
-// useUnifiedTopology: true,
-// });
+mongoose.connect(dbUrl, {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true,
+});
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
