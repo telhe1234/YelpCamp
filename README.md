@@ -6,23 +6,21 @@ This web app uses HTML, Bootstrap, PLAIN OL' css, JS for its front-end, and Node
 
 ## Final Product
 
-!["Screenshot of YelpCamp Main Page the Desktop Version"]()
+!["Screenshot of YelpCamp Main Page the Desktop Version"](https://github.com/telhe1234/YelpCamp/blob/main/docs/YelpCamp_IMain_Page.png)
 
-!["Screenshot of YelpCamp Main Page the Mobile and Tablet Version""]()
+!["Screenshot of YelpCamp Main Page the Mobile and Tablet Version""](https://github.com/telhe1234/YelpCamp/blob/main/docs/main_page_phone_version.jpg)
 
-!["Screenshot of YelpCamp Campgrounds Page the Desktop Version"]()
+!["Screenshot of YelpCamp Campgrounds Page the Desktop Version"](https://github.com/telhe1234/YelpCamp/blob/main/docs/campgrounds_index_Page.png)
 
-!["Screenshot of YelpCamp Campgrounds Page the Mobile and Tablet Version""]()
+!["Screenshot of YelpCamp Campgrounds Page the Mobile and Tablet Version""](https://github.com/telhe1234/YelpCamp/blob/main/docs/campgrounds_samples.jpg)
 
-!["Screenshot of Cluster Map"]()
+!["Screenshot of Cluster Map"](https://github.com/telhe1234/YelpCamp/blob/main/docs/cluster_Map.png)
 
-!["Screenshot of Login Form"]()
+!["Screenshot of Login Form"](https://github.com/telhe1234/YelpCamp/blob/main/docs/login_page.png)
 
-!["Screenshot of Review Form and List of Reviews"]()
+!["Screenshot of Review Form and List of Reviews"](https://github.com/telhe1234/YelpCamp/blob/main/docs/leave_a_review_and_reviews_list.png)
 
-!["Screenshot of New Campground Form"]()
-
-!["Screenshot of some YelpCamp Sample campgrounds"]()
+!["Screenshot of New Campground Form"](https://github.com/telhe1234/YelpCamp/blob/main/docs/create_new_campground_page.png)
 
 ## Getting Started
 
