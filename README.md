@@ -25,9 +25,9 @@ This web app uses HTML, Bootstrap, plain ol' css, JS for its front-end, and Node
 ## Getting Started
 
 1. git clone git@github.com:telhe1234/YelpCamp.git for ssh and https://github.com/telhe1234/YelpCamp.git for HTTPS
-   cd yelpcamp
-2. Install dependencies using the `npm install` command.
-3. Create a .env file in the root of the project and add the following:
+2. cd yelpcamp
+3. Install dependencies using the `npm install` command.
+4. Create a .env file in the root of the project and add the following:
 
    CLOUDINARY_CLOUD_NAME=<name>
    CLOUDINARY_KEY=<key>
@@ -36,9 +36,9 @@ This web app uses HTML, Bootstrap, plain ol' css, JS for its front-end, and Node
    DB_URL=<<url>
    PORT=80
 
-4. Install mongodb and run mongod in another terminal
-5. Create a cloudinary account to get an API key and secret token 6. Start the web server using the `node app.js` or `npm start` command. The app will be served at <http://localhost:3000/>.
-6. Go to <http://localhost:3000/> in your browser.
+5. Install mongodb and run mongod in another terminal
+6. Create a cloudinary account to get an API key and secret token 6. Start the web server using the `node app.js` or `npm start` command. The app will be served at <http://localhost:3000/>.
+7. Go to <http://localhost:3000/> in your browser.
 
 ## Dependencies
 
