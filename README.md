@@ -6,9 +6,15 @@ This web app uses HTML, Bootstrap, PLAIN OL' css, JS for its front-end, and Node
 
 ## Final Product
 
-!["Screenshot of YelpCamp the Desktop Version"]()
+!["Screenshot of YelpCamp Main Page the Desktop Version"]()
 
-!["Screenshot of YelpCamp the Mobile and Tablet Version""]()
+!["Screenshot of YelpCamp Main Page the Mobile and Tablet Version""]()
+
+!["Screenshot of Cluster Map"]()
+
+!["Screenshot of Login Form"]()
+
+!["Screenshot of Review Form and List of Reviews"]()
 
 !["Screenshot of New Campground Form"]()
 
@@ -21,15 +27,16 @@ This web app uses HTML, Bootstrap, PLAIN OL' css, JS for its front-end, and Node
 2. Install dependencies using the `npm install` command.
 3. Create a .env file in the root of the project and add the following:
 
-CLOUDINARY_CLOUD_NAME=<name>
-CLOUDINARY_KEY=<key>
-CLOUDINARY_SECRET=<secret>
-MAPBOX_TOKEN=<token>
-DB_URL=<<url>
-PORT=80 
-4. Install mongodb and run mongod in another terminal 
-5. Create a cloudinary account to get an API key and secret token 6. Start the web server using the `node app.js` or `npm start` command. The app will be served at <http://localhost:3000/>. 
-7. Go to <http://localhost:3000/> in your browser.
+   CLOUDINARY_CLOUD_NAME=<name>
+   CLOUDINARY_KEY=<key>
+   CLOUDINARY_SECRET=<secret>
+   MAPBOX_TOKEN=<token>
+   DB_URL=<<url>
+   PORT=80
+
+4. Install mongodb and run mongod in another terminal
+5. Create a cloudinary account to get an API key and secret token 6. Start the web server using the `node app.js` or `npm start` command. The app will be served at <http://localhost:3000/>.
+6. Go to <http://localhost:3000/> in your browser.
 
 ## Dependencies
 
