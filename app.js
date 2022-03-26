@@ -19,9 +19,8 @@ const mongoSanitize = require("express-mongo-sanitize");
 const userRoutes = require("./routes/users");
 const campgroundsRoutes = require("./routes/campgrounds");
 const reviewsRoutes = require("./routes/reviews");
-// const dbUrl = process.env.DB_URL;
+
 const dbUrl = process.env.DB_URL || "mongodb://localhost:27017/yelp-camp";
-// const MongoStore = require('connect-mongo');
 const MongoStore = require("connect-mongo");
 
 mongoose.connect(dbUrl, {

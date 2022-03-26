@@ -8,6 +8,10 @@ const Campground = require("../models/campground");
 //   useCreateIndex: true,
 //   useUnifiedTopology: true,
 // });
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+
 const dbUrl = process.env.DB_URL || "mongodb://localhost:27017/yelp-camp";
 
 mongoose.connect(dbUrl, {
@@ -32,7 +36,7 @@ const seedDB = async () => {
     const random1000 = Math.floor(Math.random() * 1000);
     const price = Math.floor(Math.random() * 20) + 10;
     const camp = new Campground({
-      author: "62323c869e7648d4160df3ea",
+      author: "623d208f3d222c587b2f279e",
       location: `${cities[random1000].city}, ${cities[random1000].state}`,
       title: `${sample(descriptors)} ${sample(places)}`,
       description:
@@ -47,16 +51,16 @@ const seedDB = async () => {
       },
       images: [
         {
-          url: "https://res.cloudinary.com/dkj3vq23f/image/upload/v1647743752/YelpCamp/k0gom4hpfeccuqugfyxz.jpg",
-          filename: "YelpCamp/k0gom4hpfeccuqugfyxz",
+          url: "https://res.cloudinary.com/dkj3vq23f/image/upload/v1648308394/YelpCamp/fzfbre7ecpzmn8kpueym.jpg",
+          filename: "YelpCamp/fzfbre7ecpzmn8kpueym",
         },
         {
-          url: "https://res.cloudinary.com/dkj3vq23f/image/upload/v1647743752/YelpCamp/fgjhusq07zuxbtoez0hi.jpg",
-          filename: "YelpCamp/fgjhusq07zuxbtoez0hi",
+          url: "https://res.cloudinary.com/dkj3vq23f/image/upload/v1648308394/YelpCamp/c7xycvybjbebxqelmtxv.jpg",
+          filename: "YelpCamp/c7xycvybjbebxqelmtxv",
         },
         {
-          url: "https://res.cloudinary.com/dkj3vq23f/image/upload/v1647743752/YelpCamp/jryxjmzjtl1sxddaunvx.jpg",
-          filename: "YelpCamp/jryxjmzjtl1sxddaunvx",
+          url: "https://res.cloudinary.com/dkj3vq23f/image/upload/v1648308395/YelpCamp/hwbuyie5xfygukl1xkt4.jpg",
+          filename: "YelpCamp/hwbuyie5xfygukl1xkt4",
         },
       ],
     });

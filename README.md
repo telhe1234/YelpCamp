@@ -10,6 +10,10 @@ This web app uses HTML, Bootstrap, PLAIN OL' css, JS for its front-end, and Node
 
 !["Screenshot of YelpCamp Main Page the Mobile and Tablet Version""]()
 
+!["Screenshot of YelpCamp Campgrounds Page the Desktop Version"]()
+
+!["Screenshot of YelpCamp Campgrounds Page the Mobile and Tablet Version""]()
+
 !["Screenshot of Cluster Map"]()
 
 !["Screenshot of Login Form"]()
