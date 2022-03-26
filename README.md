@@ -2,7 +2,7 @@
 
 YelpCamp is a website where users can create and review campgrounds. YelpCamp includes a cluster map that displays markers of all the campgrounds available . In order to review or create a campground, you must have an account. This project was part of Colt Steele's 'The Web Developer Bootcamp 2021' on Udemy.
 
-This web app uses HTML, Bootstrap, PLAIN OL' css, JS for its front-end, and Node, Express, MongoDB for its back-end. Passport was also used to handle authentication.
+This web app uses HTML, Bootstrap, plain ol' css, JS for its front-end, and Node, Express, MongoDB for its back-end. Passport was also used to handle authentication.
 
 ## Final Product
 
