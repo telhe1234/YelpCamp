@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 const ejsMate = require("ejs-mate");
 const session = require("express-session");
 const flash = require("connect-flash");
-const ExpressError = require("./utils/ExpressError");
+const ExpressError = require("./utils/expressError");
 const methodOverride = require("method-override");
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
@@ -24,12 +24,12 @@ const dbUrl = process.env.DB_URL || "mongodb://localhost:27017/yelp-camp";
 // const MongoStore = require('connect-mongo');
 const MongoStore = require("connect-mongo");
 
-mongoose.connect(dbUrl, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true,
-});
+mongoose.connect(dbUrl);
+// useNewUrlParser: true,
+// useCreateIndex: true,
+// useFindAndModify: false,
+// useUnifiedTopology: true,
+// });
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
@@ -51,7 +51,7 @@ app.use(
     replaceWith: "_",
   })
 );
-const secret = process.env.SECRET || "thisshouldbeabettersecret";
+const secret = process.env.SECRET || "thisshouldbeabettersecret!";
 
 // const store = new MongoStore({
 //   url: dbUrl,
