@@ -8,11 +8,11 @@ This web app uses HTML, Bootstrap, plain ol' css, JS for its front-end, and Node
 
 !["Screenshot of YelpCamp Main Page the Desktop Version"](https://github.com/telhe1234/YelpCamp/blob/main/docs/YelpCamp_IMain_Page.png)
 
-!["Screenshot of YelpCamp Main Page the Mobile and Tablet Version""](https://github.com/telhe1234/YelpCamp/blob/main/docs/main_page_phone_version.jpg)
+!["Screenshot of YelpCamp Main Page the Mobile and Tablet Version""](https://github.com/telhe1234/YelpCamp/blob/main/docs/YelpcamMainPage.jpg)
 
 !["Screenshot of YelpCamp Campgrounds Page the Desktop Version"](https://github.com/telhe1234/YelpCamp/blob/main/docs/campgrounds_index_Page.png)
 
-!["Screenshot of YelpCamp Campgrounds Page the Mobile and Tablet Version""](https://github.com/telhe1234/YelpCamp/blob/main/docs/campgrounds_samples.jpg)
+!["Screenshot of YelpCamp Campgrounds Page the Mobile and Tablet Version""](https://github.com/telhe1234/YelpCamp/blob/main/docs/YelpCampCampgroundsPage.jpg)
 
 !["Screenshot of Cluster Map"](https://github.com/telhe1234/YelpCamp/blob/main/docs/cluster_Map.png)
 
